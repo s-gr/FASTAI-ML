@@ -33,8 +33,8 @@ df, y, nas = proc_df(df_raw, 'SalePrice')
 
 
 m = RandomForestRegressor(n_jobs=-1)
-print(m.fit(X, y))
-print(m.score(X, y))
+print(m.fit(df, y))
+print(m.score(df, y))
 
 
 def split_vals(a, n):
